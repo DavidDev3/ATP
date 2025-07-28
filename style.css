@@ -1,0 +1,160 @@
+body{
+	font-family: Arial;
+	background-color: #1a1a2e;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	width: 100px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.opcoes{
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.opcoes a{
+	color: #a8a8a8;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.opcoes a:hover{
+	color: cyan;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+main{
+	padding: 50px 20px;
+}
+
+.conteudo{
+	max-width: 50%;
+}
+
+.conteudo h1{
+	font-size: 40px;
+}
+
+.conteudo p{
+	line-height: 1.5;
+}
+
+.formulario{
+	margin-top: 20px;
+}
+
+.formulario input{
+	padding: 15px;
+	background-color: #2e2e3a;
+	color: white;
+	border-radius: 30px;
+	border: none;
+	width: 60%;
+}
+
+.formulario button{
+	padding: 15px 40px;
+	background-color: #00c6c7;
+	color: white;
+	border-radius: 30px;
+	border: none;
+	font-weight: bolder;
+	transition: 0.3s;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.formulario button:hover{
+	background-color: darkcyan;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .conteudo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .conteudo h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .formulario input {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .formulario button {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 0;
+    font-size: 17px;
+  }
+
+  main > div img {
+    width: 100%;
+    max-width: 300px;
+    margin: 25px auto 0;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .opcoes {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .opcoes a {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #2e2e3a;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .opcoes a:hover {
+    color: cyan;
+    background-color: #003f3f;
+  }
+}
